@@ -18,7 +18,7 @@
 <?php
 
 class Movie {
-    public $title
+    public $title;
 
 }
 // CREO LE ISTANZE DELLA CLASSE MOVIE
