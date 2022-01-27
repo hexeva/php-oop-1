@@ -32,31 +32,38 @@ class Movie {
         return $this->title . ' - ' . $this->author . ' - ' . $this->year . ' - ' . $this->production;
     }
 
+    // DEFINISCO UNA VARIABILE CONSTRUCT
+
+    public function __construct($_title,$_author){
+        $this->title = $_title;
+        $this->author = $_author;
+    }
+
 
 }
 // CREO LE ISTANZE DELLA CLASSE MOVIE
-$terminator = new Movie();
+$terminator = new Movie('terminator','James Cameron');
 // ad ogni istanza assegno il proprio attributo
 $terminator->title = 'TERMINATOR';
 $terminator->author = 'James Cameron';
 $terminator->year = '1984';
 
-$rambo = new Movie();
+$rambo = new Movie('rambo','Ted Kotcheff');
 // ad ogni istanza assegno il proprio attributo
 $rambo->title = 'RAMBO (first blood)';
 $rambo->author = 'Ted Kotcheff';
 $rambo->year = '1982';
 
-$rocky = new Movie();
+$rocky = new Movie('rocky','John Avildsen');
 // ad ogni istanza assegno il proprio attributo
 $rocky->title = 'ROCKY';
 $rocky->author = 'John Avildsen';
 $rocky->year = '1976';
 
-var_dump($terminator);
-var_dump($rambo);
-var_dump($rocky);
-var_dump($terminator->getMovieComplete());
+// var_dump($terminator);
+// var_dump($rambo);
+// var_dump($rocky);
+// var_dump($terminator->getMovieComplete());
 
 
 ?>
