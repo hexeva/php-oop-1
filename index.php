@@ -18,13 +18,38 @@
 <?php
 
 class Movie {
+    // definisco le variabili generiche delle istanze
     public $title;
+    public $author;
+    public $year;
+    // assegno anche una variabile comune a tutte le istanze
+    public $production = 'Metro goldwyn mayer';
+
 
 }
 // CREO LE ISTANZE DELLA CLASSE MOVIE
 $terminator = new Movie();
+// ad ogni istanza assegno il proprio attributo
+$terminator->title = 'TERMINATOR';
+$terminator->author = 'James Cameron';
+$terminator->year = '1984';
+
 $rambo = new Movie();
+// ad ogni istanza assegno il proprio attributo
+$rambo->title = 'RAMBO first blood';
+$rambo->author = 'Ted Kotcheff';
+$rambo->year = '1982';
+
+$rocky = new Movie();
+// ad ogni istanza assegno il proprio attributo
+$rocky->title = 'ROCKY';
+$rocky->author = 'John Avildsen';
+$rocky->year = '1976';
+
 var_dump($terminator);
+var_dump($rambo);
+var_dump($rocky);
+
 
 ?>
 </body>
